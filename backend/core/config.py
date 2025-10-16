@@ -10,12 +10,15 @@ class Settings(BaseSettings):
     GEMINI_API_KEY: str
     GEMINI_MODEL: str = "gemini-2.5-pro"
 
-    # Optional S3 (only if you store resume/linkedin in S3)
+    # Optional S3 (only if you store resume)
     S3_BUCKET_NAME: Optional[str] = None
-    S3_KNOWLEDGE_BASE_KEY: Optional[str] = None  # e.g., "resume.txt"
-    LINKEDIN_S3_KEY: Optional[str] = None        # e.g., "linkedin.txt"
+    S3_KNOWLEDGE_BASE_KEY: Optional[str] = None  
+    # LINKEDIN_S3_KEY: Optional[str] = None      
 
-    # CORS (comma-separated origins). e.g., "https://dXXXXX.cloudfront.net"
+    # Contact
+    CONTACT_EMAIL: str   
+
+    
     FRONTEND_ORIGINS: Optional[str] = None
 
     class Config:
