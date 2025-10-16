@@ -15,7 +15,7 @@ from .config import settings
 _resume_text_cache: Optional[str] = None
 _linkedin_text_cache: Optional[str] = None
 
-CONTACT_EMAIL = "pavankumarmalasani154@gmail.com"
+email = settings.CONTACT_EMAIL
 
 
 # ---------- Load Professional Context ----------
@@ -99,7 +99,7 @@ def process_chat_query(user_query: str, session_id: str) -> str:
     chat_history = get_chat_history(session_id)
     formatted_history = "\n".join(f"{m['role']}: {m['content']}" for m in chat_history)
 
-    # SYSTEM PERSONA (do not reveal)
+    # SYSTEM PERSONA PROMPT
     system_prompt = f"""
 You are a professional assistant representing Pavan Kumar Malasani in THIRD PERSON.
 
@@ -118,7 +118,7 @@ Skill Clarification (M2):
 
 Privacy (C2):
 - If asked for phone, address, or personal details:
-  “Pavan does not share personal contact details. He can be reached by email at {CONTACT_EMAIL}.”
+  “Pavan does not share personal contact details. He can be reached by email at {email}.”
 
 Behavioral & Hypothetical (Hybrid B1+B2, H1):
 - For strengths, leadership, pressure handling, or “what would he do if…”:
@@ -145,7 +145,7 @@ Answer the final user question following the rules above.
 
     final_prompt = f"{system_prompt}\nUser: {user_query}\nAssistant:"
 
-    # ---------- Gemini HTTPS call (no grpc, Lambda-safe) ----------
+    # ---------- Gemini HTTPS call (no grpc) ----------
     api_url = (
         f"https://generativelanguage.googleapis.com/v1/models/"
         f"{settings.GEMINI_MODEL}:generateContent?key={settings.GEMINI_API_KEY}"
