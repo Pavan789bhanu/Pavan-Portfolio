@@ -14,19 +14,20 @@ jobs:
       LAMBDA_FUNCTION_NAME: ${{ secrets.LAMBDA_FUNCTION_NAME }}
       S3_BUCKET: ${{ secrets.S3_BUCKET }}
       CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+      VITE_API_BASE: ${{ secrets.VITE_API_BASE }}
 
     steps:
     # --- Checkout Repo ---
     - name: Checkout Code
       uses: actions/checkout@v3
 
-    # --- Setup Node (Frontend Build) ---
-    - name: Setup Node.js
+    # --- Setup Node.js for Frontend ---
+    - name: Setup Node.js 20
       uses: actions/setup-node@v3
       with:
-        node-version: 18
+        node-version: 20
 
-    # --- Setup Python (Backend Package) ---
+    # --- Setup Python for Backend ---
     - name: Setup Python
       uses: actions/setup-python@v4
       with:
@@ -46,7 +47,7 @@ jobs:
     - name: Install Backend Dependencies
       working-directory: backend
       run: |
-        pip install -r requirements.txt -t ./package
+        pip install -r requirements.txt -t package
         cp -r api core main.py data package/
 
     - name: Zip Backend for Lambda
