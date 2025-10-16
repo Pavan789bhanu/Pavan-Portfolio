@@ -8,8 +8,8 @@
       // Light by default, dark if user chose it earlier
       (function () {
         const stored = localStorage.getItem('theme');
-        const theme = stored || 'light';
-        if (theme === 'dark') document.documentElement.classList.add('dark');
+        const theme = stored || 'dark';
+        if (theme === 'light') document.documentElement.classList.add('light');
       })();
     </script>
   </head>
