@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env
+.env.*
+*.env
+
+# AWS / Deployment
+build/
+package/
+function.zip
+
+# IDE & system files
+.DS_Store
+*.log
+.idea/
+.vscode/

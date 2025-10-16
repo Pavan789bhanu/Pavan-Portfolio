@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavan Kumar Malasani — Portfolio</title>
+    <script>
+      // Light by default, dark if user chose it earlier
+      (function () {
+        const stored = localStorage.getItem('theme');
+        const theme = stored || 'light';
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+      })();
+    </script>
+  </head>
+  <body class="bg-[#f5f6fb] text-gray-900 dark:bg-[#0f1115] dark:text-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

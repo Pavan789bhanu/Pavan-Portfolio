@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll + soft transitions */
+html { scroll-behavior: smooth; }
+* { transition: background-color .25s ease, color .25s ease, border-color .25s ease; }
+
+/* Section reveal */
+.reveal { opacity: 0; transform: translateY(12px); }
+.reveal.in { opacity: 1; transform: translateY(0); }
+
+/* Unified “glass” card + section system */
+.section      { @apply py-16; }
+.sectionWrap  { @apply max-w-6xl mx-auto px-4; }
+.sectionH1    { @apply text-3xl font-semibold mb-8; }
+
+.card {
+  @apply bg-white/85 dark:bg-white/5 backdrop-blur border border-white/60 dark:border-white/10 rounded-glass shadow-soft;
+}
+.card-hover { @apply transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-lg; }
+
+/* Timeline line & dot */
+.timeline { position: relative; }
+.timeline:before {
+  content: ""; position: absolute; left: 1rem; top: 0; bottom: 0; width: 2px;
+  background: rgba(79,70,229,.35);
+}
+.dark .timeline:before { background: rgba(79,70,229,.45); }
+
+.dot {
+  position: absolute; left: .85rem; width: 10px; height: 10px; border-radius: 9999px;
+  background: #4f46e5; box-shadow: 0 0 0 4px rgba(79,70,229,.15);
+}
+
+/* Pills for skills */
+.pill {
+  @apply inline-flex items-center px-3 py-1 rounded-full border text-sm
+         bg-white/70 border-white/60 text-gray-800
+         dark:bg-white/5 dark:border-white/10 dark:text-gray-100;
+}
+.pill:hover { @apply border-brand-600 text-brand-600 dark:text-brand-600; }
