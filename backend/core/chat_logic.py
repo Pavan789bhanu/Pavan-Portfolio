@@ -175,7 +175,10 @@ Answer the final user question following the rules above.
 
     except Exception as e:
         print(f"Gemini HTTP Error: {e}")
-        bot_response = "Pavan is currently unavailable to respond."
+        bot_response = bot_response = (
+        "Pavan is processing your question. "
+        "Please try again in a moment if it persists."
+    )
 
     # Save updated history (in Lambda with S3)
     updated = chat_history + [
