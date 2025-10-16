@@ -47,7 +47,7 @@ jobs:
       working-directory: backend
       run: |
         pip install -r requirements.txt -t ./package
-        cp -r package/* ./package/
+        cp -r api core main.py data package/
 
     - name: Zip Backend for Lambda
       working-directory: backend/package
