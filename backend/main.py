@@ -14,13 +14,6 @@ logger = logging.getLogger("uvicorn.error")
 logger.setLevel(logging.INFO)
 
 # -----------------------
-# CORS: allow only CloudFront frontend
-# -----------------------
-ALLOWED_ORIGINS = [
-    "https://dlsjxie4epl9e.cloudfront.net",  # Frontend URL
-]
-
-# -----------------------
 # FastAPI Application
 # -----------------------
 app = FastAPI(
@@ -32,7 +25,7 @@ app = FastAPI(
 # Global CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins= ALLOWED_ORIGINS,
+    allow_origins= settings.FRONTEND_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -44,13 +37,6 @@ app.add_middleware(
 @app.get("/")
 def health_check():
     return {"status": "running", "message": "Portfolio API online"}
-
-# -----------------------
-# OPTIONS Handler for Preflight (Critical for Browser Chat!)
-# -----------------------
-# @app.options("/api/chat")
-# def chat_preflight() -> Response:
-#     return Response(status_code=204)
 
 # -----------------------
 # Chat Endpoint (POST /api/chat)
