@@ -8,9 +8,9 @@ const items = [
     period: '2023 – Present',
     location: 'USA',
     bullets: [
-      'Reduced fraud by 32% with production ML detection.',
-      'Accelerated compliance reporting by 38% via automation.',
-      'Built GenAI assistants for advisory workflows.',
+      'Deployed GenAI copilots that cut advisor response time by 41% across wealth platforms.',
+      'Engineered AI pipelines that accelerated compliance analysis by 38% using automated summarization.',
+      'Delivered personalized recommendations, boosting engagement by 17%.',
     ],
   },
   {
@@ -19,9 +19,9 @@ const items = [
     period: '2020 – 2023',
     location: 'India',
     bullets: [
-      'Designed ETL + ML pipelines (Spark, Airflow, MLflow).',
-      'Deployed models and dashboards for BFSI clients.',
-      'Improved precision/recall with feature engineering.',
+      'Automated compliance validation with NLP pipelines, improving accuracy and cutting manual review time by 29%.',
+      'Reduced fraudulent activity by 32% using ML models (XGBoost, Deep Learning) across 5M+ daily transactions.',
+      'Integrated explainable dashboards (SHAP, Tableau, Power BI) to support auditors and regulatory teams.',
     ],
   },
 ];
