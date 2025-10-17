@@ -48,17 +48,17 @@ def get_resume_text() -> str:
     return _resume_text_cache
 
 
-def get_linkedin_text() -> str:
-    global _linkedin_text_cache
-    if _linkedin_text_cache is not None:
-        return _linkedin_text_cache
+# def get_linkedin_text() -> str:
+#     global _linkedin_text_cache
+#     if _linkedin_text_cache is not None:
+#         return _linkedin_text_cache
 
-    if os.environ.get("AWS_LAMBDA_FUNCTION_NAME") and settings.S3_BUCKET_NAME and settings.LINKEDIN_S3_KEY:
-        _linkedin_text_cache = _read_s3_text(settings.LINKEDIN_S3_KEY)
-    else:
-        _linkedin_text_cache = _read_local_text("linkedin.txt")
+#     if os.environ.get("AWS_LAMBDA_FUNCTION_NAME") and settings.S3_BUCKET_NAME and settings.LINKEDIN_S3_KEY:
+#         _linkedin_text_cache = _read_s3_text(settings.LINKEDIN_S3_KEY)
+#     else:
+#         _linkedin_text_cache = _read_local_text("linkedin.txt")
 
-    return _linkedin_text_cache or ""
+#     return _linkedin_text_cache or ""
 
 
 # ---------- Chat History (S3 when in Lambda) ----------
@@ -97,7 +97,7 @@ def process_chat_query(user_query: str, session_id: str) -> str:
     - Uses Gemini via HTTPS (requests)
     """
     resume_context = get_resume_text()
-    linkedin_context = get_linkedin_text()
+    # linkedin_context = get_linkedin_text()
     chat_history = get_chat_history(session_id)
     formatted_history = "\n".join(f"{m['role']}: {m['content']}" for m in chat_history)
 
@@ -134,10 +134,7 @@ Forbidden:
 Internal Knowledge (DO NOT mention or expose):
 ---
 {resume_context}
-
-{linkedin_context}
 ---
-
 Conversation History:
 ---
 {formatted_history}
@@ -162,7 +159,7 @@ Answer the final user question following the rules above.
     }
 
     try:
-        resp = requests.post(api_url, json=payload, timeout=20)
+        resp = requests.post(api_url, json=payload, timeout=40)
         resp.raise_for_status()
         result = resp.json()
         bot_response = (
