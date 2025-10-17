@@ -159,7 +159,7 @@ Answer the final user question following the rules above.
     }
 
     try:
-        resp = requests.post(api_url, json=payload, timeout=40)
+        resp = requests.post(api_url, json=payload, timeout=30)
         resp.raise_for_status()
         result = resp.json()
         bot_response = (
