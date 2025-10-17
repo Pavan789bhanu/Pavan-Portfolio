@@ -10,10 +10,12 @@ from typing import List, Dict, Any, Optional
 import boto3
 import requests
 from .config import settings
+import time
 
 # Cache text to avoid repeated reads
 _resume_text_cache: Optional[str] = None
-_linkedin_text_cache: Optional[str] = None
+_last_resume_load_time = 0
+CACHE_TTL_SECONDS = 3600
 
 email = settings.CONTACT_EMAIL
 
@@ -35,15 +37,15 @@ def _read_s3_text(key: str) -> str:
 
 
 def get_resume_text() -> str:
-    global _resume_text_cache
-    if _resume_text_cache is not None:
-        return _resume_text_cache
-
-    if os.environ.get("AWS_LAMBDA_FUNCTION_NAME") and settings.S3_BUCKET_NAME and settings.S3_KNOWLEDGE_BASE_KEY:
-        _resume_text_cache = _read_s3_text(settings.S3_KNOWLEDGE_BASE_KEY)
-    else:
-        _resume_text_cache = _read_local_text("resume.txt")
-    return _resume_text_cache or ""
+    global _resume_text_cache, _last_resume_load_time
+    now = time.time()
+    if not _resume_text_cache or (now - _last_resume_load_time) > CACHE_TTL_SECONDS:
+        if os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
+            _resume_text_cache = _read_s3_text(settings.S3_KNOWLEDGE_BASE_KEY)
+        else:
+            _resume_text_cache = _read_local_text("resume.txt")
+        _last_resume_load_time = now
+    return _resume_text_cache
 
 
 def get_linkedin_text() -> str:
