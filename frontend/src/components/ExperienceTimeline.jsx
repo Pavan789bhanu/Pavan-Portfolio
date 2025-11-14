@@ -16,7 +16,7 @@ const items = [
   {
     company: 'Tata Consultancy Services (TCS)',
     title: 'Machine Learning Engineer',
-    period: '2020 – 2023',
+    period: '2021 – 2023',
     location: 'India',
     bullets: [
       'Reduced default probability prediction error by 19% for banking clients by developing optimized credit risk models using Random Forest, XGBoost, and LightGBM.',
