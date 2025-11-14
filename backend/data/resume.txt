@@ -2,41 +2,40 @@ Pavan Kumar Malasani
 pavankumarmalasani154@gmail.com | +1 (720) 209-0756 | Georgia, USA | LinkedIn
 
 Summary
-AI/ML Engineer with 3+ years of experience delivering scalable machine learning, generative AI, and data engineering solutions across banking and financial domain. Skilled in developing predictive models, fraud detection systems, and GenAI‑powered assistants using Python, TensorFlow, PyTorch, and LLMs. Proficient in building ETL pipelines with Spark and Airflow, deploying MLOps frameworks with Docker, Kubernetes, and MLflow. Creating BI dashboards with Power BI and Tableau. Proven success in reducing fraud by 32%, accelerating compliance reporting by 38%, and driving adoption of AI‑driven advisory platforms in Citigroup and TCS.
+AI/ML Engineer with 3+ years of experience designing, training, and deploying intelligent systems across banking and financial domains. Skilled in developing predictive models, credit risk engines, and GenAI-powered solutions using Python, TensorFlow, PyTorch, and LLMs. Expertise in MLOps automation, NLP pipelines, and scalable data workflows leveraging Spark, Airflow, and MLflow. Proven success in reducing fraud exposure, accelerating risk evaluations, and enhancing compliance reporting through AI-driven insights. Adept at bridging data science and engineering to deliver high-impact, production-ready financial AI systems.
 
 Technical Skills
-Language and Databases: Python, R, SQL, Go, C/C++, MATLAB, Scala, MySQL, PostgreSQL, Oracle, Firebase, MongoDB, Redshift
-Library/Packages: TensorFlow, PyTorch, Keras, Huggingface, Transformers, Scikit‑Learn, XGBoost, NumPy, Pandas, SciPy, OpenCV, NLTK, SpaCy, Regex, Matplotlib, Seaborn, ggplot, ResNet‑50
-Tools: Power BI, Tableau, Microsoft Excel, Hive, Alteryx, Apache Spark, Apache Airflow, Snowflake, Hadoop, MLflow, Docker, Kubernetes, Git, GitHub, Jira, Jenkins, Google Analytics, ETL
-NLP & LLM: Text Classification, Sentiment analysis, Audio Processing, Chatbot, Pinecone, FAISS, Langchain, GPT, Gemini, LLaMA, Mistral, BERT, Whisper, WavLM, LoRA, QLoRA, RAG, Prompt Engineering, LLM Evaluations (BERTScore, BLEUScore, Recall@k), Quantization (GPTQ, AWQ)
-ML Algorithms: Supervised Learning (XGBoost, Random Forest), Unsupervised Learning (Isolation Forest, Clustering, Autoencoders), Deep Learning (CNN, RNN, BERT Fine‑Tuning), Time‑Series Forecasting (ARIMA, Prophet), Feature Engineering, Ensemble Techniques, Model Evaluations, Fraud Detection
-Cloud & Other Skills: Amazon Web Services (AWS), Microsoft Azure, GCP, Data Cleaning, Data Wrangling, Data Warehousing, Data Visualization, A/B Testing, Critical Thinking, Problem Solving, Communication & Presentation.
+Programming & Frameworks: Python, R, C++, SQL, PySpark, TensorFlow, PyTorch, Scikit-learn, Keras, Hugging Face, XGBoost, LightGBM, OpenCV, NumPy, Pandas
+Machine Learning & AI: Supervised & Unsupervised Learning, Feature Engineering, Ensemble Methods, Model Optimization, Explainable AI, Credit Risk Scoring, Fraud Detection, Predictive Analytics, Time-Series Forecasting
+Deep Learning & NLP: BERT, GPT, LLaMA, LangChain, Sentence Transformers, RAG Pipelines, Tokenization, Text Summarization, Sentiment Analysis, Document Classification, NER, LLM Fine-Tuning & Evaluation
+MLOps & Deployment: MLflow, Apache Airflow, Docker, Kubernetes, FastAPI, Flask, Model Retraining, Version Control, CI/CD Pipelines, Model Governance, Performance Monitoring, A/B Testing
+Data Engineering & Visualization: Apache Spark, Hive, Snowflake, SQL Server, Power BI, Tableau, Alteryx, Data Wrangling, ETL Pipeline Design, Data Quality Validation, Feature Store Management
+Cloud Platforms: AWS (Sagemaker, Lambda, EC2, S3, Redshift), Azure ML, GCP (Vertex AI), IAM, CloudWatch
+Tools & Collaboration: Git, GitHub, Jenkins, Jira, Confluence, Agile Development, Cross-Functional Collaboration, Technical Documentation, Data Storytelling, Stakeholder Communication
 
 Professional Experience
 AI Engineer, Citigroup
 Jun 2024 – Present | Remote, USA
-• Designed a GenAI‑powered advisory assistant using Llama and GPT models with LangChain and Pinecone, automating investment query handling and reducing advisor workload by 41% while improving client response times.
-• Built financial text summarization pipelines leveraging GPT embeddings, BERT re‑ranking, and ROUGE/BLEU evaluation, enabling analysts to interpret compliance and market insights 38% faster.
-• Built a personalized recommendation engine combining collaborative filtering and transformer‑based embeddings, increasing wealth management product adoption by 17% and enhancing client portfolio diversification strategies.
-• Architected ETL pipelines with Apache Spark and Airflow to process structured and unstructured trading data, supporting large‑scale AI‑driven analytics and compliance monitoring.
-• Implemented MLOps workflows automating retraining and deployment of generative models with Docker, Kubernetes, and MLflow, ensuring reproducibility, scalability, and strict financial regulatory compliance.
-• Partnered with risk management teams to integrate AI‑driven insights into fraud detection and credit risk assessments, strengthening oversight and aligning with Basel III compliance frameworks.
-• Integrated Generative AI copilots into Citigroup’s customer service platforms, enabling real‑time natural language support, improving resolution rates by 28%, and reducing call center escalation volumes significantly.
+•	Spearheaded LLM-based compliance automation using GPT-4 and LangChain, reducing regulatory documentation turnaround by 40% and enabling auto-summarization of CCAR and FR Y-14 reports.
+•	Developed AML anomaly detection pipelines integrating Isolation Forest, BERT embeddings, and Kafka streams, enhancing transaction surveillance precision by 27% across the Global Risk & Compliance division.
+•	Built a Generative AI assistant for investment banking analysts leveraging LLaMA 2 and Pinecone retrieval, automating market brief generation and saving ~28 hours weekly in manual research time.
+•	Implemented credit-risk modeling pipelines using Gradient Boosting and Explainable AI (SHAP), improving loan approval accuracy by 19% while aligning models with Citi’s Model Risk Management (MRM) framework.
+•	Designed MLOps infrastructure with MLflow, Docker, and Kubernetes, automating retraining and governance workflows across all deployed AI models, cutting model maintenance time by 32%.
+•	Collaborated with global finance teams to integrate AI-driven early-warning indicators into treasury risk dashboards, providing executives real-time visibility into liquidity exposure across multi-region portfolios.
+•	Implemented changes in Citigroup AI lifecycle management by standardizing retraining cadence, audit trails, and bias testing processes, establishing enterprise-wide benchmarks for model reliability, governance, and compliance.
 
-AI Engineer, TCS
+ML Engineer, TCS
 May 2021 – Jul 2023 | Chennai, India
-• Developed fraud detection models using Gradient Boosting, XGBoost, and Deep Learning, analyzing 5M+ transactions daily and reducing fraudulent activities by 32% across banking clients.
-• Built NLP pipelines with SpaCy and NLTK for entity recognition from unstructured financial documents, automating compliance validation, improving accuracy by 29%, and reducing manual review time.
-• Engineered scalable ETL workflows integrating structured and semi‑structured data using Apache Airflow and Spark, enabling real‑time processing and supporting near‑instant anomaly detection within transaction datasets.
-• Conducted A/B testing on ensemble models, optimizing hyperparameters and reducing false positives, achieving 91% precision in fraud detection systems deployed across multiple financial institutions.
-• Designed interactive dashboards in Power BI and Tableau visualizing fraud detection insights, enabling stakeholders to monitor high‑risk patterns and proactively implement real‑time intervention strategies.
-• Collaborated with cross‑functional teams, integrating predictive fraud insights into transaction monitoring systems, strengthening regulatory compliance and enabling secure, data‑driven financial decision‑making.
-• Deployed fraud detection solutions on AWS using SageMaker, Lambda, and Redshift, ensuring secure, scalable, and compliant AI adoption across financial clients with continuous monitoring.
-• Enhanced fraud model explainability using SHAP values, creating transparent risk scoring dashboards for auditors, increasing trust and ensuring adherence with stringent financial regulations.
+•	Developed credit risk prediction models using Random Forest, XGBoost, and LightGBM, optimizing loan approval workflows and reducing default probability prediction error by 19% across banking clients.
+•	Created automated feature engineering pipelines with PySpark and Airflow, improving data readiness for ML model training by 42% and standardizing data processing across multiple projects.
+•	Designed model explainability frameworks using SHAP and LIME, enabling transparent decision-making for auditors and ensuring compliance with RBI and GDPR financial data regulations.
+•	Built transaction anomaly detection systems using Isolation Forest and Autoencoders, identifying fraudulent patterns across 3M+ daily records with 92% precision.
+•	Deployed ML-based forecasting models for treasury and liquidity management using Prophet and ARIMA, improving cash flow prediction accuracy by 26% and supporting data-driven financial planning.
+•	Automated model version control and monitoring workflows with MLflow and Jenkins, integrating retraining triggers and performance alerts into CI/CD pipelines for production ML systems.
+•	Collaborated with data engineering teams to build secure ETL pipelines on AWS Redshift and S3, ensuring optimized data ingestion for credit scoring and compliance reporting projects.
+
 
 Education
-Master of Science in Data Science, University of Colorado Boulder
-Aug 2023 – May 2025 | Colorado, USA
+Master of Science in Data Science, University of Colorado Boulder | Colorado, USA
 
-Bachelor of Technology in Information Technology, SSN College of Engineering
-Aug 2019 – May 2023 | Chennai, India
+Bachelor of Technology in Information Technology, SSN College of Engineering | Chennai, India
