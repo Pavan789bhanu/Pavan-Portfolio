@@ -8,9 +8,11 @@ const AboutSection = () => {
       <div className="grid md:grid-cols-3 gap-6">
         <Card className="p-6 md:col-span-2">
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-            I’m an AI/ML Engineer with 3+ years of experience delivering scalable machine learning,
-            generative AI, and data engineering solutions in the banking and financial domain.
-            I focus on fraud detection, LLM-powered assistants, and reliable MLOps delivery.
+            I am an AI/ML Engineer with experience in designing, training, and deploying intelligent systems across banking and financial domains. 
+            Skilled in developing predictive models, credit risk engines, and GenAI-powered solutions using Python, TensorFlow, PyTorch, and LLMs. 
+            Expertise in MLOps automation, NLP pipelines, and scalable data workflows leveraging Spark, Airflow, and MLflow. 
+            Proven success in reducing fraud exposure, accelerating risk evaluations, and enhancing compliance reporting through AI-driven insights. 
+            Adept at bridging data science and engineering to deliver high-impact, production-ready financial AI systems.
           </p>
         </Card>
         <Card className="p-6">

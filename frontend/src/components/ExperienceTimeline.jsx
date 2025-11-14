@@ -8,20 +8,21 @@ const items = [
     period: '2023 – Present',
     location: 'USA',
     bullets: [
-      'Deployed GenAI copilots that cut advisor response time by 41% across wealth platforms.',
-      'Engineered AI pipelines that accelerated compliance analysis by 38% using automated summarization.',
-      'Delivered personalized recommendations, boosting engagement by 17%.',
+      'Cut regulatory documentation turnaround by 40% by spearheading LLM-based compliance automation using GPT-4 and LangChain to auto-summarize CCAR reports.',
+      'Enhanced transaction surveillance precision by 27% by engineering AML anomaly detection pipelines that integrated Isolation Forest, BERT embeddings, and Kafka streams.',
+      'Saved ~28 hours weekly in manual research by building a GenAI assistant for investment banking analysts using LLAMA 2 and Pinecone retrieval to automate market brief generation.',
     ],
   },
   {
     company: 'Tata Consultancy Services (TCS)',
-    title: 'AI Engineer',
+    title: 'Machine Learning Engineer',
     period: '2020 – 2023',
     location: 'India',
     bullets: [
-      'Automated compliance validation with NLP pipelines, improving accuracy and cutting manual review time by 29%.',
-      'Reduced fraudulent activity by 32% using ML models (XGBoost, Deep Learning) across 5M+ daily transactions.',
-      'Integrated explainable dashboards (SHAP, Tableau, Power BI) to support auditors and regulatory teams.',
+      'Reduced default probability prediction error by 19% for banking clients by developing optimized credit risk models using Random Forest, XGBoost, and LightGBM.',
+      'Accelerated data readiness for ML training by 42% by creating automated feature engineering pipelines using PySpark and Airflow.',
+      'Improved cash flow prediction accuracy by 26% by deploying time-series forecasting models (Prophet, ARIMA)  to support treasury and liquidity management.',
+
     ],
   },
 ];

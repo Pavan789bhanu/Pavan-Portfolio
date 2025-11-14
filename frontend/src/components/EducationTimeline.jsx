@@ -6,13 +6,13 @@ const items = [
     label: "Master's Degree",
     degree: 'Master of Science — Data Science',
     school: 'University of Colorado Boulder — Boulder, CO',
-    detail: 'Applied ML & LLMs; end-to-end GenAI systems; RAG, prompt engineering, scalable cloud deployment.',
+    detail: 'Applied ML & LLMs, Agentic systems, RAG, prompt engineering, scalable cloud deployment.',
   },
   {
     label: "Bachelor's Degree",
     degree: 'Bachelor of Technology — Information Technology',
-    school: 'Sri Sivasubramaniya Nadar College of Engineering — Chennai, TN',
-    detail: 'Algorithms, databases, software systems; ML-focused academic projects.',
+    school: 'SSN College of Engineering — Chennai, TN',
+    detail: 'Data Structires & Algorithms, databases, software systems, Machine Learning.',
   },
 ];
 
